@@ -1,6 +1,6 @@
 <div>
     <?php
-print( " . $name);
+print( " . "Hello");
 
 ?>
 </div>
