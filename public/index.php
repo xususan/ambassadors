@@ -1,7 +1,7 @@
 <?php
 
     // configuration
-    require("../includes/config.php"); 
+    // require("../includes/config.php"); 
     
     // set up a table which we will fill from our query into portfolios
     // $positions = [];
@@ -26,5 +26,7 @@
     
     // render portfolio
     //render("portfolio.php", ["positions" => $positions, "title" => "Portfolio", "cash" => $cash[0]["cash"]]);
-    render("profile_view.php");
+    // render("profile_view.php");
+
 ?>
+<?php include_once("index.html"); ?>

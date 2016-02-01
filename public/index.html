@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+
+        <!-- http://getbootstrap.com/ -->
+        <link href="/css/bootstrap.min.css" rel="stylesheet"/>
+                <!-- http://underscorejs.org/ -->
+
+        <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'/>
+        
+        <script src="/js/underscore-min.js"></script>
+
+        <!-- http://google-maps-utility-library-v3.googlecode.com/svn/tags/markerwithlabel/1.1.10/ -->
+        <script src="/js/markerwithlabel_packed.js"></script>
+
+
+        
+        <title>Lamonsters, Inc</title>
+
+        <!-- https://developers.google.com/maps/documentation/javascript/ -->
+
+        <script src="https://maps.googleapis.com/maps/api/js"></script>
+        <script>
+        function initialize() {
+            var mapCanvas = document.getElementById('map');
+            var mapOptions = {
+              center: new google.maps.LatLng(42.374943, -71.117157),
+              zoom: 16,
+              mapTypeId: google.maps.MapTypeId.ROADMAP
+            }
+            // var map = new google.maps.Map(mapCanvas, mapOptions)
+            
+            // configure UI once Google Map is idle (i.e., loaded)
+            
+            // google.maps.event.addListenerOnce(map, "idle", configure);
+            // google.maps.event.addDomListener(window, 'load', initialize);
+          }
+
+
+
+        </script>
+        <style>
+          #map {
+            width: 800px;
+            height: 600px;
+            vertical-align: top; 
+          }
+          #filter {
+            vertical-align: top;
+          }
+        }
+
+
+        </style>
+        
+        <script src="/js/markerwithlabel_packed.js"></script>
+
+        <!-- http://jquery.com/ -->
+        <script src="/js/jquery-1.11.3.min.js"></script>
+
+        <!-- https://github.com/twitter/typeahead.js/ -->
+        <script src="/js/typeahead.jquery.min.js"></script>
+
+        <!-- http://getbootstrap.com/ -->
+        <script src="/js/bootstrap.min.js"></script>
+
+        <!-- http://underscorejs.org/ -->
+        <script src="/js/underscore-min.js"></script>
+
+        <!-- https://github.com/twitter/typeahead.js/ -->
+
+        <!-- app's own JavaScript -->
+        <script src="/js/scripts.js"></script>
+
+                <!-- app's own CSS -->
+        <link href="/css/styles.css" rel="stylesheet"/>
+
+        <title>Lamonsters, Inc </title>
+
+    </head>
+    <body>
+    <div class = "container">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+        <div class="container topnav">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand topnav" href="/">Lamonsters, Inc</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+            
+                        <li><a href="create.php">Create Study Group</a></li>
+                        <li><a href="search.php">Join Existing Group </a></li>
+                        <li><a href="leavegroup.php">Leave Current Group </a></li>
+                        <li><a href="changepassword.php">Change Password</a></li>                        
+                        <li><a href="logout.php"><strong>Log Out</strong></a></li>
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+     <div id="middle">
+        <span style="padding-top:50px">
+            <div id="filter">
+                <select id="type" onchange="filtermarkers(this.value);">
+                <option value="">Select Department</option>
+                <option value="AFRAMER">AFRAMER</option>
+                <option value="ANTHRO">ANTHRO</option>
+                <option value="ASTRON">ASTRON</option>
+                <option value="APMTH">APMTH</option>
+                <option value="BIOPHYS">BIOPHYS</option>
+                <option value="BIOSTAT">BIOSTAT</option>
+                <option value="CHEM">AFRAMER</option>
+                <option value="CLASSIC">CLASSIC</option>
+                <option value="COMPSCI">COMPSCI</option>
+                <option value="ECON">ECON</option>
+                <option value="ENGLISH">ENGLISH</option>
+                <option value="ENGSCI">ENGSCI</option>
+                <option value="EXPOS">EXPOS</option>
+                <option value="FRSEMR">FRSEMR</option>
+                <option value="GOV">GOV</option>
+                <option value="HIST">HIST</option>
+                <option value="HAA">HAA</option>
+                <option value="HISTSCI">HISTSCI</option>
+                <option value="MATH">MATH</option>
+                <option value="MCB">MCB</option>
+                <option value="MUSIC">MUSIC</option>
+                <option value="OEB">OEB</option>
+                <option value="PHIL">PHIL</option>
+                <option value="PHYSICS">PHYSICS</option>
+                <option value="PSY">PSY</option>
+                <option value="SOCIOL">SOCIOL</option>
+                <option value="STAT">STAT</option>
+                <option value="VES">VES</option>
+                </select>
+            </div>
+            <div id="map"></div>
+        </div>
+        <style>
+          #legend {
+            background: black;
+            padding: 10px;
+            text-align: left;
+          }
+        </style>
+        <div id="legend">
+        <div> 
+           <img src = "img/cs50icons/coralmarker1.png"> 
+           Social Sciences
+        </div>
+        <div>
+            <img src = "img/cs50icons/crimsonmarker1.png"> 
+           Sciences
+        </div>
+        <div>
+            <img src = "img/cs50icons/tealmarker1.png"> 
+           Engineering and Applied Sciences
+        </div>
+        <div> 
+            <img src = "img/cs50icons/greenmarker1.png"> 
+           Arts and Humanities
+        </div>
+        <div>
+            <img src = "img/cs50icons/purplemarker1.png"> 
+           Other Offerings
+        </div>
+
+        </div>
+        <div id="bottom">
+        </div>
+
+        </div>
+
+    </body>
+    </body>
+</html>
