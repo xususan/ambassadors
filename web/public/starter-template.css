@@ -23,6 +23,15 @@ html{
 }
 .navbar{
 }
+.profile-picture{
+  width: 30%;
+  height: 150px;
+  float:left;
+}
+.profile-info{
+  margin-left:30%;
+  height:150px;
+}
 .logoindicator{
 	padding:20px;
 }
