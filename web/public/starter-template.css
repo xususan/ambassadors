@@ -24,13 +24,13 @@ html{
 .navbar{
 }
 .profile-picture{
-  width: 30%;
-  height: 150px;
+  width: 40%;
+  height: 100px;
   float:left;
 }
 .profile-info{
-  margin-left:30%;
-  height:150px;
+  margin-left:40%;
+  height:100px;
 }
 .logoindicator{
 	padding:20px;
@@ -43,6 +43,12 @@ html{
 }
 .profile-info{
 	font-family:'Sacramento';
+  padding-top:3px;
+}
+.profile-picture img{
+  max-width: 100px;
+  max-height: 100px;
+  padding-left: 0px;
 }
 .chart {
   position: relative;
