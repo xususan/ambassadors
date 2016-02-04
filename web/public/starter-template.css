@@ -1,0 +1,101 @@
+body {
+  padding-top: 50px;
+  height:100%;
+  /*font-family:'Open Sans';*/
+}
+html{
+	height:100%;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+  min-height: 100%;
+  color: #29d8d1;
+}
+.container{
+	height:100%;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.navbar-header{
+	padding-left:10px;
+	padding-right:10px;
+}
+.navbar{
+}
+.logoindicator{
+	padding:20px;
+}
+.footer{
+	background-color:#79faf5;
+}
+.small{
+	color:white;
+}
+.profile-info{
+	font-family:'Sacramento';
+}
+.chart {
+  position: relative;
+  display: inline-block;
+  color: #999;
+  font: ;-size: 20px;
+  text-align: center;
+}
+
+.chart figcaption {
+  padding: 50px 25px;
+  width: 100px;
+  height: 50px;
+  border: 20px solid #f0f0f0;
+  border-radius: 100px;
+  line-height: 50px;
+}
+
+.chart img {
+  position: absolute;
+  max-width: 100px;
+  max-height: 100px;
+  background: white;
+}
+.html {
+  top: 45px;
+  left: 45px;
+}
+
+.html + svg .outer {
+  stroke: #29d8d1;
+}
+
+.outer {
+  fill: transparent;
+  stroke: #333;
+  stroke-width: 20;
+  stroke-dasharray: 534;
+  transition: stroke-dashoffset 1s;
+  -webkit-animation-play-state: running;
+  
+  /* firefox bug fix - won't rotate at 90deg angles */
+  -moz-transform: rotate(-89deg) translateX(-190px);
+}
+.chart[data-percent='75'] .outer {
+  stroke-dashoffset: 161;
+  -webkit-animation: show75 2s;
+  animation: show75 2s;
+}
+
+.h2normal h2
+{
+	font-weight:normal;
+}
+
+/* animation*/
+@-webkit-keyframes show75 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  
+  to {
+    stroke-dashoffset: 161;
+  }
+}
