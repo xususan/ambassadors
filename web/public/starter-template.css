@@ -26,6 +26,15 @@ html{
 }
 .navbar{
 }
+.footer {
+  position: absolute;
+  bottom: 0;
+  width:90%;
+  text-align:center;
+  /* Set the fixed height of the footer here */
+  height: 30px;
+}
+
 .profile-picture{
   width: 40%;
   height: 100px;
@@ -38,13 +47,10 @@ html{
 .logoindicator{
 	padding:20px;
 }
-.footer{
-	background-color:#79faf5;
-}
 .small{
 	color:white;
 }
-.profile-info{
+.name{
 	font-family:'Sacramento';
   padding-top:3px;
 }
