@@ -1,5 +1,5 @@
 body {
-  padding-top: 30px;
+  padding-top: 50px;
   height:100%;
   font-family:'Lato';
 }
@@ -7,7 +7,7 @@ html{
 	height:100%;
 }
 .starter-template {
-  padding: 40px 15px;
+  padding: 5% 5%;
   text-align: center;
   min-height: 100%;
   /*color: #29d8d1 obnoxious blue color*/
@@ -20,8 +20,8 @@ html{
   color:white;
 }
 .navbar-header{
-	padding-left:10px;
-	padding-right:10px;
+	padding-left:3%;
+	padding-right:3%;
   background-color:white;
 }
 .navbar{
@@ -37,7 +37,8 @@ html{
 
 .profile-picture{
   width: 40%;
-  height: 100px;
+  height: 60px;
+  padding-top:20px;
   float:left;
 }
 .profile-info{
@@ -45,18 +46,18 @@ html{
   height:100px;
 }
 .logoindicator{
-	padding:20px;
+	padding:5%;
 }
 .small{
 	color:white;
 }
 .name{
 	font-family:'Sacramento';
-  padding-top:3px;
+  padding-top:1%;
 }
 .profile-picture img{
-  max-width: 100px;
-  max-height: 100px;
+  max-width: 70px;
+  max-height: 70px;
   padding-left: 0px;
 }
 .chart {
