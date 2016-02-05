@@ -1,7 +1,7 @@
 body {
-  padding-top: 50px;
+  padding-top: 30px;
   height:100%;
-  /*font-family:'Open Sans';*/
+  font-family:'Lato';
 }
 html{
 	height:100%;
@@ -10,30 +10,54 @@ html{
   padding: 40px 15px;
   text-align: center;
   min-height: 100%;
-  color: #29d8d1;
+  /*color: #29d8d1 obnoxious blue color*/
 }
 .container{
 	height:100%;
 	padding-left: 0px;
 	padding-right: 0px;
+  background-color: #4F5165;
+  color:white;
 }
 .navbar-header{
 	padding-left:10px;
 	padding-right:10px;
+  background-color:white;
 }
 .navbar{
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width:90%;
+  text-align:center;
+  /* Set the fixed height of the footer here */
+  height: 30px;
+}
+
+.profile-picture{
+  width: 40%;
+  height: 100px;
+  float:left;
+}
+.profile-info{
+  margin-left:40%;
+  height:100px;
 }
 .logoindicator{
 	padding:20px;
 }
-.footer{
-	background-color:#79faf5;
-}
 .small{
 	color:white;
 }
-.profile-info{
+.name{
 	font-family:'Sacramento';
+  padding-top:3px;
+}
+.profile-picture img{
+  max-width: 100px;
+  max-height: 100px;
+  padding-left: 0px;
 }
 .chart {
   position: relative;
@@ -56,7 +80,6 @@ html{
   position: absolute;
   max-width: 100px;
   max-height: 100px;
-  background: white;
 }
 .chart svg {
   position: absolute;
