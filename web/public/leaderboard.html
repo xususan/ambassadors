@@ -5,27 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
+    <meta name="description" content="Ambassador Portal">
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Current Status</title>
+    <title>Leaderboard</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/form.css" rel="stylesheet">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
     <!-- Custom Fonts-->
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Sacramento' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
 
     <!-- Custom styles for this template -->
     <link href="starter-template.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+ 
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -35,6 +39,29 @@
   </head>
 
   <body>
+<!--
+    <nav id="main-nav" class="clearfix  ">
+
+        <div class="nav-wrapper">
+            <a href="/">
+                <div class="icon"></div>
+            </a>
+
+            <div class="links">
+                <a href="#" class="js-mobile-nav-toggle mobile-nav-toggle">MENU</a>
+                <a href="/whats-happening" class="whats-happening hidden-xs">what's happening</a>
+                <ul class="">
+                    <li class="visible-xs"><a href="/whats-happening" class="whats-happening">what's happening</a></li>
+                    <li><a href="#the-app" class="inpage">the app</a></li>
+                    <li><a href="#movement" class="inpage">movement</a></li>
+                    <li><a href="#contact" class="inpage">contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+    </div>
+</nav> -->
 
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
@@ -45,37 +72,36 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Ambassador Profile</a>
+          <a class="navbar-brand" href="#">Submit Email</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Leaderboard</a></li>
+            <li class="active"><a href="#">Contact Us</a></li>
 
           </ul>
-        </div><!--/.nav-collapse -->
+        </div>
       </div>
     </nav>
 
     <div class="container">
 
       <div class="starter-template">
-
-        <div class="profile-picture">
-
+        <div class="forms">
+          <div class="form-group">
+            Email:
+            <input type="text" name="firstname"><br>
+          </div>
+          <div class="form-group">
+              <button class="btn btn-default" type="submit">
+                  <span aria-hidden="true" class="glyphicon glyphicon-log-in"></span>
+                  Submit
+              </button>
+          </div>
         </div>
+      <div class="footer">
+        <a href = "../home.html">View Profile </a>
+        <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
 
-        <div class="profile-info">
-        <h1>Susan Xu</h1>
-        <h3> Harvard College </h3>
-        </div>
-
-        <div class="logoindicator">
-          <img src="img/getmii-g-only.jpeg" alt="Getmii">
-        </div>
-
-        <div class="status">
-          <h2> 600 Points </h2>
-        </div>
       </div>
     </div><!-- /.container -->
 
