@@ -23,7 +23,11 @@ html{
   background-color: #4F5165;
   color:white;
 }
-
+.h1{
+  font-family:'Sacramento';
+  margin: auto;
+  padding-top:1%;
+}
 .footer {
   position: absolute;
   bottom: 0;
@@ -57,16 +61,32 @@ html{
   margin-left:40%;
   height:100px;
 }
+
+/* 
+/* d. Hero
+/* =================================================================== */
+#hero {
+  background: #12151b url(img/hero.jpg) no-repeat center center fixed;
+  /*slides for hero*/
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  background-size: cover !important;
+  padding-top: 86px;
+  padding-bottom: 0;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+.ie8 #hero { background: #12151b; }
+
+/* 
+/* e. Stats
+/* =================================================================== */
 .logoindicator{
 	padding:5%;
 }
 .small{
 	color:white;
-}
-.h1{
-	font-family:'Sacramento';
-  margin: auto;
-  padding-top:1%;
 }
 .profile-picture img{
   max-width: 70px;
