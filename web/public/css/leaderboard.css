@@ -53,6 +53,9 @@ body {
   padding-left:5%;
   font-size:10pt;
 }
+.flatTable .info{
+  text-align:left;
+}
 .table div:first-child
 {
   width:50px;
