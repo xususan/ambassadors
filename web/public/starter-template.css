@@ -1,3 +1,7 @@
+/* 
+/* a. General
+/* =================================================================== */
+
 body {
   padding-top: 0px;
   height:100%;
@@ -19,13 +23,7 @@ html{
   background-color: #4F5165;
   color:white;
 }
-.navbar-header{
-	padding-left:3%;
-	padding-right:3%;
-  background-color:white;
-}
-.navbar{
-}
+
 .footer {
   position: absolute;
   bottom: 0;
@@ -35,6 +33,20 @@ html{
   height: 30px;
 }
 
+/* 
+/* b. Navigation Bar
+/* =================================================================== */
+.navbar-header{
+	padding-left:3%;
+	padding-right:3%;
+  background-color:white;
+}
+.navbar{
+}
+
+/* 
+/* c. Profile
+/* =================================================================== */
 .profile-picture{
   width: 40%;
   height: 60px;
@@ -51,8 +63,9 @@ html{
 .small{
 	color:white;
 }
-.name{
+.h1{
 	font-family:'Sacramento';
+  margin: auto;
   padding-top:1%;
 }
 .profile-picture img{
