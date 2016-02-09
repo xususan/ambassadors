@@ -166,7 +166,9 @@
     <div class="container">
 
       <div class="starter-template">
-          <div class="fb-login-button" data-max-rows="1" data-size="large" data-show-faces="false" data-auto-logout-link="true"></div>
+<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+</fb:login-button>
+
       <div class="footer">
         Leaderboard
         <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
