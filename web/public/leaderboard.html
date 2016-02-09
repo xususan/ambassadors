@@ -14,7 +14,7 @@
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <link href="css/form.css" rel="stylesheet">
+    <link href="css/leaderboard.css" rel="stylesheet">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
@@ -86,17 +86,34 @@
     <div class="container">
 
       <div class="starter-template">
-        <div class="forms">
-          <div class="form-group">
-            Email:
-            <input type="text" name="firstname"><br>
-          </div>
-          <div class="form-group">
-              <button class="btn btn-default" type="submit">
-                  <span aria-hidden="true" class="glyphicon glyphicon-log-in"></span>
-                  Submit
-              </button>
-          </div>
+       <h1>RWD List to Table</h1>
+          <table class="rwd-table">
+            <tr>
+              <th></th>
+              <th>Name</th>
+              <th>College</th>
+              <th>Points</th>
+            </tr>
+            <tr>
+              <td data-th="Rank">1</td>
+              <td data-th="Name">Melissa Yu</td>
+              <td data-th="College">Harvard College</td>
+              <td data-th="Points">450</td>
+            </tr>
+            <tr>
+              <td data-th="Rank">2</td>
+              <td data-th="Name">Max Meyer</td>
+              <td data-th="College">Innovation Labs</td>
+              <td data-th="Points">300</td>
+            </tr>
+            <tr>
+              <td data-th="Rank">3</td>
+              <td data-th="Name">Susan Xu</td>
+              <td data-th="College">Boston University</td>
+              <td data-th="Points">270</td>
+            </tr>
+          </table>
+
         </div>
       <div class="footer">
         <a href = "../home.html">View Profile </a>

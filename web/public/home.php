@@ -73,7 +73,7 @@
               <h1>Susan Xu </h1>
             </div>
             <div class="h2normal"> Harvard College              <?php 
-              echo 'hello'
+              echo "hello"
               ?> </div>
         </div>
         <div class="logoindicator">
